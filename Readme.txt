@@ -1,7 +1,7 @@
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
     Stunt Rally - game based on VDrift and OGRE, with Track Editor
-    Copyright (C) 2017  Crystal Hammer and contributors
+    Copyright (C) 2014  Crystal Hammer and contributors
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -16,121 +16,112 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-    The license GNU GPL 3.0 applies only to code written by us.
+    The license GPL 3.0 applies only to code written by us.
     Which is in source dir, subdirs: editor, network, ogre and road.
     Libraries used have their own licenses.
     For data licenses look in various .txt files in data subdirs.
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
-    Links
+Links
 
-Homepage:
-        http://stuntrally.tuxfamily.org/
+Project's Homepage:  (all links, Wiki pages)
+        http://code.google.com/p/vdrift-ogre/
 
-Releases:  (GNU/Linux binaries, Windows installer)
+Releases:  (Windows installer, Linux binary)
         https://sourceforge.net/projects/stuntrally/files/
-Sources:
+Git repositories:  (for latest sources, data, and tracks)
         https://github.com/stuntrally/
-
-Forums:  (Report bugs, issues, etc):
+Forums:  (Report bugs, issues, ideas, comments, etc):
         http://forum.freegamedev.net/viewforum.php?f=77
 
-Screenshots:  (galleries from all versions)
-        http://stuntrally.tuxfamily.org/gallery
-
+Screenshots gallery:  (from all versions)
+        http://picasaweb.google.com/CryHam/
 Videos:  (gameplay and editor)
         http://www.youtube.com/user/TheCrystalHammer
+Editor tutorial:
+        http://code.google.com/p/vdrift-ogre/wiki/TrackEditor
 
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
-    Description
+Description
 
-The game features 172 tracks in 34 sceneries and 25 vehicles.
+The game features 153 tracks in 24 sceneries and 19 cars.
 Game modes include: Single Race, Tutorials, Championships, Challenges,
 Multiplayer and Split Screen. Also Replays and Ghost drive are present.
 
-The Track Editor allows creating and modifying tracks.
-Both run on GNU/Linux and Windows.
+The Track Editor allows modifying and creating tracks.
+Both run on Linux and Windows.
 
 The game aims at a rally style of driving (like in Richard Burns Rally),
 with possible stunt elements (jumps, loops, pipes)
 and uses a 3D spline generated road.
 
-For full features list check our Wiki:
-http://stuntrally.tuxfamily.org/wiki/doku.php?id=features
+For full features list check: http://code.google.com/p/vdrift-ogre/wiki/Features
 
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
-    Hardware requirements
+Hardware requirements
 
 The minimum hardware is:
-  CPU: with 2 cores, above 2.0GHz,
-  GPU: GeForce 9600 GT or Radeon HD 3870,
-with Shader Model 3.0 supported and 256 MB GPU RAM (512 on Higher).
+a CPU with 2 cores, above 2.0GHz,
+and GPU: GeForce 9600 GT or Radeon HD 3870,
+with Shader Model 3.0 supported and 256 MB GPU RAM (512 on higher settings).
+A good GPU for smooth play at Higher preset is GTX 560 Ti (no effects).
 
-A good GPU for smooth play on Higher preset is GTX 560 Ti (no effects).
-Integrated GPUs or laptops don't handle the game well or at all.
+It is possible to run on older, but
+integrated GPUs or laptops can't handle the game well (or at all).
 
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
-    Running
+Running
 
-Localized help for new users, is on the Welcome screen
-shown at game start. Or press Ctrl-F1 to show it.
-It also has game related Hints.
+In game Esc/Tab key shows/hides Options.
 
-In game, Esc/Tab key shows/hides GUI.
-At first, open Options to adjust Screen resolution,
-pick graphics preset according to your GPU and restart.
-Open Options tab Input, to see or reassign keys,
-or configure a game controller.
+At first in Options window (tab Screen) adjust resolution and
+pick settings preset according to your GPU.
+Restart after changing preset.
 
+Keys used in game can be seen in Options tab [Input].
+If you want to reassign keys, or have a game controller
+go to tab [Input] to configure it and test range.
+
+By default, drive with arrow keys, use backspace to rewind after crashes.
+Change cameras with C/X (with shift for main cameras only).
+Cameras can be adjusted in game, by mouse - move mouse to see actions.
+
+All settings and logs are saved to user folder (check Wiki page [Paths]).
 If you have problems running, read Wiki page [Running].
-All settings and logs are saved to user folder (see [Paths]).
+If it doesn't help, report on IRC or make an issue on Forum [SR Bugs & Help]
+(if a similar topic doesn't exist). Be sure to attach your log files.
 
-    Feedback
+Editor
 
-Be sure you've read [Read before posting] topic first:
-http://forum.freegamedev.net/viewtopic.php?f=78&t=3814
-
-If that didn't help, report on
-IRC: #stuntrally on freenode,
-or create a topic on Forum [SR Bugs & Help].
-
-    Editor
-
-In editor, F1 (or tilde) key shows/hides GUI,
+In editor, F1 key shows/hides Options,
 press Ctrl-F1 to read what can be edited and how.
-Tab key switches between Camera and Edit modes.
-
+Tab key switches between Camera/Edit mode.
 There isn't (and won't be) an undo function -
 hit F5 to reload last track state, and F4 to save it (often).
 After each save, track can be tested in game.
 
-Editor Tutorial page with 14 videos (total 64 min):
-http://stuntrally.tuxfamily.org/wiki/doku.php?id=editor
+There is an Editor Tutorial Wiki page (link at top)
+with videos: 14 chapters, 64 minutes total.
 
 Have fun !
 
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
-    Compiling
+Compiling
 
 For newest sources and how to compile them check
-project's Wiki page [Compiling]:
-http://stuntrally.tuxfamily.org/wiki/doku.php?id=compile
+project's Wiki page [Compiling].
 
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
-    Help is welcomed
+Help is welcomed
 
-Track creators
-    If you manage to create an interesting track,
-    it could be released in future versions.
-
-Translators
-    If you want to help translating a language,
-    check Wiki page [Localization].
+Currently there is 1 active programmer.
+We are looking for skilled and motivated people
+that can help improving the game or editor.
 
 Testers
     If you are able to build from sources,
@@ -138,8 +129,23 @@ Testers
 
 Programmers
     If you know C++, OGRE or shaders, and could
-    handle any of the [Roadmap] tasks.
+    handle one (or some) of the project's [Issues], 
+    or want to do something better and know how to.
 
 Artists
+    Help exporting existing models from Blender to Ogre.
     Editing meshes for game, uv unwrap, texturing etc.
-    If you can record/edit sounds for games.
+    If you can create/edit 3D models and textures
+	or record/edit sounds for the game.
+
+Track creators
+    If you manage to create an interesting track,
+    it could be released in future versions.
+
+Translators
+    If you want to help translating into
+    a language, check Wiki page [Localization].
+
+If so, tell us on IRC at #stuntrally on freenode,
+or by posting on Forum,
+or email me at: cryham (at) g m a i l (dot) com.
