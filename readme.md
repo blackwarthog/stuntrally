@@ -8,4 +8,7 @@
 1. Create a folder c:\v
 1. Clone my repository in c:\v\stuntrally
 1. Download this zip and extract in c:\v
-
+1. Run c:\v\oalinst.exe
+1. Open c:\v\stuntrally\proj\StuntRally.sln
+1. Compile
+Done!
