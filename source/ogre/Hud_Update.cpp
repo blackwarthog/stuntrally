@@ -61,12 +61,17 @@ void CHud::GetVals(int id, float* vel, float* rpm, float* clutch, int* gear)
 	assert(id < app->frm.size());
 	#endif
 	const CarModel* pCarM = app->carModels[id];
-	const CAR* pCar = pCarM ? pCarM->pCar : 0;
+	CAR* pCar = pCarM ? pCarM->pCar : 0;
 
 	if (pCar && !app->bRplPlay && !pCarM->isGhost())
-	{	*vel = pCar->GetSpeedometer() * (pSet->show_mph ? 2.23693629f : 3.6f);
-		*rpm = pCar->GetEngineRPM();  *gear = pCar->GetGear();
+	{	
+		*vel = pCar->GetSpeedometer() * (pSet->show_mph ? 2.23693629f : 3.6f);
+		*rpm = pCar->GetEngineRPM();  
+		*gear = pCar->GetGear();
 		//*clutch = pCar->GetClutch();  // todo: problems in multi thr1
+		float odo = pCar->CalcOdometer(*vel);
+		
+		// todo: UPDATE TCP SERVER HERE
 	}
 	if (app->bRplPlay)
 	{

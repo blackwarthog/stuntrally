@@ -20,8 +20,10 @@ CMakeLists.txt.user*
 *.ncb
 *.suo
 *.user
-
 *.lnk
+*.ilk
+*.opensdf
+*.sdf
 
 #--  transl
 locale/translation*

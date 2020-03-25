@@ -457,3 +457,29 @@ void CAR::SetPosRewind(const MATHVECTOR<float,3>& pos, const QUATERNION<float>& 
 	//  steer
 	//dynamics.SetSteering(steer);  last_steer = steer;
 }
+
+
+float CAR::CalcOdometer(float speedometer)
+{
+	using namespace boost::chrono;
+
+	// calc odometer
+	steady_clock::time_point now = steady_clock::now();
+
+	typedef boost::chrono::milliseconds ms;
+	ms d = boost::chrono::duration_cast<ms>( now - startOdometer);
+
+	if (pGame && !pGame->pause) // TODO
+	{
+		float milis = d.count();
+
+		if (odometer != -1.f)
+			odometer = odometer + (abs(speedometer) * (milis / 1000.f));
+		else
+			odometer = 0.f;
+	}
+
+	startOdometer = now;
+
+	return odometer;
+}

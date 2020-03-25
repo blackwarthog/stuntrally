@@ -84,11 +84,20 @@ public:
 	bool GetTCSEnabled() const	{	return dynamics.GetTCSEnabled();	}
 	bool GetTCSActive() const	{	return dynamics.GetTCSActive();		}
 	
+	// odometer
+	float odometer;
+	boost::chrono::steady_clock::time_point startOdometer;
+
+	float CalcOdometer(float speedometer);
+	long GetOdometer() const
+	{
+		return odometer;
+	}
+
 	/// return the speedometer reading (based on the driveshaft speed) in m/s
 	float GetSpeedometer() const
 	{
-		return dynamics.vtype != V_Car ?
-			dynamics.GetVelocity().Magnitude() : dynamics.GetSpeedMPS();
+		return dynamics.vtype != V_Car ? dynamics.GetVelocity().Magnitude() : dynamics.GetSpeedMPS();
 	}
 
 	std::string GetCarType() const	{	return cartype;	}
