@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDbg|Win32">
+      <Configuration>ReleaseDbg</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{692198B5-48DF-45D6-8822-0871A2297385}</ProjectGuid>
+    <RootNamespace>StuntRally</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    </OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\v\bullet-2.79\Extras\lib;C:\v\bullet-2.79\lib;C:\v\bullet-2.79\Extras\Serialize;C:\v\openal-soft\include;C:\v\bullet-2.79\src;c:\v\mygui\Platforms\Ogre\OgrePlatform\include;c:\v\mygui\MyGUIEngine\include;c:\v\OgreSDK_vc10_v1-9-0\include\OGRE\Plugins\ParticleFX;c:\v\OgreSDK_vc10_v1-9-0\include\OGRE\Overlay;c:\v\OgreSDK_vc10_v1-9-0\include\OGRE\Paging;c:\v\OgreSDK_vc10_v1-9-0\include\OGRE\Terrain;c:\v\OgreSDK_vc10_v1-9-0\include\OGRE;c:\v\boost_1_55_0;c:\v\libogg-1.3.1\include;c:\v\libvorbis-1.3.4\include;c:\v\SDL2-2.0.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">c:\v\bullet-2.79\Extras\lib;c:\v\bullet-2.79\lib;c:\v\mygui\bin\lib\Debug;c:\v\OgreSDK_vc10_v1-9-0\lib\debug;c:\v\boost_1_55_0\lib32-msvc-10.0;c:\v\libvorbis-1.3.4\win32\VS2010\Win32\Debug;c:\v\libogg-1.3.1\win32\VS2010\Win32\Debug;c:\v\SDL2-2.0.3\lib\x86;C:\v\openal-soft\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/StuntRally.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm1000 /MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\source\tinyxml;..\source;c:\v\bullet\src;c:\v\bullet\Extras\Serialize;c:\v\openal-soft-git\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;_USE_MATH_DEFINES;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/StuntRally.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level1</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4103;4305;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;OpenAL32.lib;libvorbisfile.lib;OgreMain_d.lib;OgreOverlay_d.lib;OgreTerrain_d.lib;OgrePaging_d.lib;MyGUIEngine_d.lib;MyGUI.OgrePlatform_d.lib;BulletCollision_debug.lib;BulletDynamics_debug.lib;LinearMath_debug.lib;BulletFileLoader_debug.lib;BulletWorldImporter_debug.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>C:\v\stuntrally\proj;c:\v\ogre\bin\lib\Debug;c:\v\ogre\Dependencies\lib\Debug;c:\v\mygui\bin\lib\Debug;C:\v\bullet-2.79\lib;c:\v\bullet\lib;c:\v\SDL2-2.0.3\lib\Debug;c:\v\libvorbis-1.3.4\libs\Debug;c:\v\libogg-1.3.1\lib\Debug;c:\v\openal-soft-git\bin\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>StuntRally.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OutputFile>$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/StuntRally.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm1000 /MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\source\tinyxml;..\source;c:\v\bullet\src;c:\v\bullet\Extras\Serialize;c:\v\openal-soft-git\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/StuntRally.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level1</WarningLevel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DisableSpecificWarnings>4103;4305;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;OpenAL32.lib;libvorbisfile.lib;OgreMain.lib;OgreOverlay.lib;OgreTerrain.lib;OgrePaging.lib;MyGUIEngine.lib;MyGUI.OgrePlatform.lib;BulletCollision.lib;BulletDynamics.lib;LinearMath.lib;BulletFileLoader.lib;BulletWorldImporter.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>StuntRally.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>c:\v\ogre\bin\lib\Release;c:\v\ogre\Dependencies\lib\Release;c:\v\mygui\bin\lib\Release;c:\v\bullet\lib;c:\v\SDL2-2.0.3\lib\Release;c:\v\libvorbis-1.3.4\libs\Release;c:\v\libogg-1.3.1\lib\Release;c:\v\openal-soft-git\bin\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/StuntRally.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm1000 /MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\source\tinyxml;..\source;c:\v\bullet\src;c:\v\bullet\Extras\Serialize;c:\v\openal-soft-git\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\ReleaseDbg/StuntRally.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>.\ReleaseDbg/</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseDbg/</ProgramDataBaseFileName>
+      <WarningLevel>Level1</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4103;4305;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;OpenAL32.lib;libvorbisfile.lib;OgreMain.lib;OgreOverlay.lib;OgreTerrain.lib;OgrePaging.lib;MyGUIEngine.lib;MyGUI.OgrePlatform.lib;BulletCollision.lib;BulletDynamics.lib;LinearMath.lib;BulletFileLoader.lib;BulletWorldImporter.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>StuntRally_rd.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>c:\v\ogre\bin\lib\Release;c:\v\ogre\Dependencies\lib\Release;c:\v\mygui\bin\lib\Release;c:\v\bullet\lib;c:\v\SDL2-2.0.3\lib\Release;c:\v\libvorbis-1.3.4\libs\Release;c:\v\libogg-1.3.1\lib\Release;c:\v\openal-soft-git\bin\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>StuntRally_rd.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\vdrift\joepack.cpp" />
+    <ClCompile Include="..\source\vdrift\joeserialize.cpp" />
+    <ClCompile Include="..\source\vdrift\model.cpp" />
+    <ClCompile Include="..\source\vdrift\model_joe03.cpp" />
+    <ClCompile Include="..\source\vdrift\model_obj.cpp" />
+    <ClCompile Include="..\source\vdrift\objectloader.cpp" />
+    <ClCompile Include="..\source\vdrift\track.cpp" />
+    <ClCompile Include="..\source\vdrift\track_object.cpp" />
+    <ClCompile Include="..\source\vdrift\vertexarray.cpp" />
+    <ClCompile Include="..\source\vdrift\endian_utility.cpp" />
+    <ClCompile Include="..\source\vdrift\forcefeedback.cpp" />
+    <ClCompile Include="..\source\vdrift\optional.cpp" />
+    <ClCompile Include="..\source\vdrift\reseatable_reference.cpp" />
+    <ClCompile Include="..\source\vdrift\toggle.cpp" />
+    <ClCompile Include="..\source\vdrift\game.cpp" />
+    <ClCompile Include="..\source\vdrift\par.cpp" />
+    <ClCompile Include="..\source\vdrift\timer.cpp" />
+    <ClCompile Include="..\source\vdrift\bezier.cpp" />
+    <ClCompile Include="..\source\vdrift\roadpatch.cpp" />
+    <ClCompile Include="..\source\vdrift\roadstrip.cpp" />
+    <ClCompile Include="..\source\ogre\main.cpp" />
+    <ClCompile Include="..\source\ogre\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\Buoyancy.cpp" />
+    <ClCompile Include="..\source\vdrift\collision_world.cpp" />
+    <ClCompile Include="..\source\vdrift\crashdetection.cpp" />
+    <ClCompile Include="..\source\vdrift\suspensionbump.cpp" />
+    <ClCompile Include="..\source\vdrift\aabb.cpp" />
+    <ClCompile Include="..\source\vdrift\aabb_space_partitioning.cpp" />
+    <ClCompile Include="..\source\vdrift\linearframe.cpp" />
+    <ClCompile Include="..\source\vdrift\linearinterp.cpp" />
+    <ClCompile Include="..\source\vdrift\rigidbody.cpp" />
+    <ClCompile Include="..\source\vdrift\rotationalframe.cpp" />
+    <ClCompile Include="..\source\vdrift\mathplane.cpp" />
+    <ClCompile Include="..\source\vdrift\mathvector.cpp" />
+    <ClCompile Include="..\source\vdrift\quaternion.cpp" />
+    <ClCompile Include="..\source\vdrift\car.cpp" />
+    <ClCompile Include="..\source\vdrift\car_sound.cpp" />
+    <ClCompile Include="..\source\vdrift\caraero.cpp" />
+    <ClCompile Include="..\source\vdrift\carbrake.cpp" />
+    <ClCompile Include="..\source\vdrift\carclutch.cpp" />
+    <ClCompile Include="..\source\vdrift\carcontrolmap_local.cpp" />
+    <ClCompile Include="..\source\vdrift\cardifferential.cpp" />
+    <ClCompile Include="..\source\vdrift\cardynamics.cpp" />
+    <ClCompile Include="..\source\vdrift\cardynamics_load.cpp" />
+    <ClCompile Include="..\source\vdrift\cardynamics_simulate.cpp" />
+    <ClCompile Include="..\source\vdrift\cardynamics_update.cpp" />
+    <ClCompile Include="..\source\vdrift\carengine.cpp" />
+    <ClCompile Include="..\source\vdrift\carsuspension.cpp" />
+    <ClCompile Include="..\source\vdrift\cartire.cpp" />
+    <ClCompile Include="..\source\vdrift\cartransmission.cpp" />
+    <ClCompile Include="..\source\vdrift\carwheel.cpp" />
+    <ClCompile Include="..\source\ogre\ChallengesXml.cpp" />
+    <ClCompile Include="..\source\ogre\ChampsXml.cpp" />
+    <ClCompile Include="..\source\vdrift\configfile.cpp" />
+    <ClCompile Include="..\source\vdrift\pathmanager.cpp" />
+    <ClCompile Include="..\source\vdrift\settings.cpp" />
+    <ClCompile Include="..\source\ogre\common\settings_com.cpp" />
+    <ClCompile Include="..\source\ogre\BaseApp.cpp" />
+    <ClCompile Include="..\source\ogre\BaseApp_Create.cpp" />
+    <ClCompile Include="..\source\ogre\BaseApp_Effects.cpp" />
+    <ClCompile Include="..\source\ogre\CInput.cpp" />
+    <ClCompile Include="..\source\ogre\Compositor.cpp" />
+    <ClCompile Include="..\source\ogre\FollowCamera.cpp" />
+    <ClCompile Include="..\source\ogre\LoadingBar.cpp" />
+    <ClCompile Include="..\source\ogre\SplitScreen.cpp" />
+    <ClCompile Include="..\source\ogre\CarModel_Create.cpp" />
+    <ClCompile Include="..\source\ogre\CarModel_Update.cpp" />
+    <ClCompile Include="..\source\ogre\CarPosInfo.cpp" />
+    <ClCompile Include="..\source\ogre\CarReflection.cpp" />
+    <ClCompile Include="..\source\ogre\Replay.cpp" />
+    <ClCompile Include="..\source\ogre\ReplayOld.cpp" />
+    <ClCompile Include="..\source\ogre\ReplayTrk.cpp" />
+    <ClCompile Include="..\source\ogre\SceneInit.cpp" />
+    <ClCompile Include="..\source\ogre\common\WaterRTT.cpp" />
+    <ClCompile Include="..\source\ogre\CGui.cpp" />
+    <ClCompile Include="..\source\ogre\Gui_Events.cpp" />
+    <ClCompile Include="..\source\ogre\Gui_Init.cpp" />
+    <ClCompile Include="..\source\ogre\Gui_Input.cpp" />
+    <ClCompile Include="..\source\ogre\Gui_KeyPress.cpp" />
+    <ClCompile Include="..\source\ogre\Gui_Network.cpp" />
+    <ClCompile Include="..\source\ogre\Gui_Replay.cpp" />
+    <ClCompile Include="..\source\ogre\Gui_Tweak.cpp" />
+    <ClCompile Include="..\source\ogre\Gui_Util.cpp" />
+    <ClCompile Include="..\source\ogre\common\GuiCom_Options.cpp" />
+    <ClCompile Include="..\source\ogre\common\GuiCom_Screen.cpp" />
+    <ClCompile Include="..\source\ogre\common\GuiCom_Set.cpp" />
+    <ClCompile Include="..\source\ogre\common\GuiCom_Track.cpp" />
+    <ClCompile Include="..\source\ogre\common\GuiCom_TrackUpd.cpp" />
+    <ClCompile Include="..\source\ogre\common\GuiCom_Util.cpp" />
+    <ClCompile Include="..\source\road\PaceNotes.cpp" />
+    <ClCompile Include="..\source\road\PaceNotesGen.cpp" />
+    <ClCompile Include="..\source\road\Road_Edit.cpp" />
+    <ClCompile Include="..\source\road\Road_File.cpp" />
+    <ClCompile Include="..\source\road\Road_Markers.cpp" />
+    <ClCompile Include="..\source\road\Road_Mesh.cpp" />
+    <ClCompile Include="..\source\road\Road_Prepass.cpp" />
+    <ClCompile Include="..\source\road\Road_Rebuild.cpp" />
+    <ClCompile Include="..\source\road\SplineBase.cpp" />
+    <ClCompile Include="..\source\ogre\common\Axes.cpp" />
+    <ClCompile Include="..\source\ogre\common\CScene.cpp" />
+    <ClCompile Include="..\source\ogre\common\PreviewTex.cpp" />
+    <ClCompile Include="..\source\ogre\common\SceneFluids.cpp" />
+    <ClCompile Include="..\source\ogre\common\SceneObjects.cpp" />
+    <ClCompile Include="..\source\ogre\common\SceneTrees.cpp" />
+    <ClCompile Include="..\source\ogre\common\Shadows.cpp" />
+    <ClCompile Include="..\source\ogre\common\simplexnoise.cpp" />
+    <ClCompile Include="..\source\ogre\common\Sky.cpp" />
+    <ClCompile Include="..\source\ogre\common\Terrain.cpp" />
+    <ClCompile Include="..\source\ogre\common\TerrainBlend.cpp" />
+    <ClCompile Include="..\source\ogre\common\TerrainMaterial.cpp" />
+    <ClCompile Include="..\source\ogre\common\Tools.cpp" />
+    <ClCompile Include="..\source\ogre\common\TrackVdr.cpp" />
+    <ClCompile Include="..\source\ogre\common\GraphView.cpp" />
+    <ClCompile Include="..\source\ogre\common\Gui_Popup.cpp" />
+    <ClCompile Include="..\source\ogre\common\MultiList2.cpp" />
+    <ClCompile Include="..\source\ogre\common\PointerFix.cpp" />
+    <ClCompile Include="..\source\ogre\common\RenderBoxScene.cpp" />
+    <ClCompile Include="..\source\ogre\common\Slider.cpp" />
+    <ClCompile Include="..\source\ogre\common\SliderValue.cpp" />
+    <ClCompile Include="..\source\ogre\CGame.cpp" />
+    <ClCompile Include="..\source\ogre\Challenges.cpp" />
+    <ClCompile Include="..\source\ogre\ChampChall.cpp" />
+    <ClCompile Include="..\source\ogre\Championships.cpp" />
+    <ClCompile Include="..\source\ogre\CHud.cpp" />
+    <ClCompile Include="..\source\ogre\Hud_Create.cpp" />
+    <ClCompile Include="..\source\ogre\Hud_Graphs.cpp" />
+    <ClCompile Include="..\source\ogre\Hud_Update.cpp" />
+    <ClCompile Include="..\source\ogre\Update.cpp" />
+    <ClCompile Include="..\source\ogre\Update_PerfTest.cpp" />
+    <ClCompile Include="..\source\ogre\Update_Poses.cpp" />
+    <ClCompile Include="..\source\ogre\common\data\BltObjects.cpp" />
+    <ClCompile Include="..\source\ogre\common\data\CData.cpp" />
+    <ClCompile Include="..\source\ogre\common\data\FluidsXml.cpp" />
+    <ClCompile Include="..\source\ogre\common\data\SceneXml.cpp" />
+    <ClCompile Include="..\source\ogre\common\data\SceneXml_Load.cpp" />
+    <ClCompile Include="..\source\ogre\common\data\TracksXml.cpp" />
+    <ClCompile Include="..\source\network\gameclient.cpp" />
+    <ClCompile Include="..\source\network\masterclient.cpp" />
+    <ClCompile Include="..\source\ogre\common\MyGUI_D3D11.cpp" />
+    <ClCompile Include="..\source\ogre\common\MessageBox\MessageBox.cpp" />
+    <ClCompile Include="..\source\ogre\common\MessageBox\MessageBoxStyle.cpp" />
+    <ClCompile Include="..\source\sound\SoundBase.cpp" />
+    <ClCompile Include="..\source\sound\SoundBaseMgr.cpp" />
+    <ClCompile Include="..\source\sound\SoundBaseMgrUtil.cpp" />
+    <ClCompile Include="..\source\sound\SoundMgr.cpp" />
+    <ClCompile Include="..\source\btOgre\BtOgre.cpp" />
+    <ClCompile Include="..\source\btOgre\BtOgreAnim.cpp" />
+    <ClCompile Include="..\source\btOgre\BtOgreDebug.cpp" />
+    <ClCompile Include="..\source\btOgre\DynamicLines.cpp" />
+    <ClCompile Include="..\source\paged-geom\BatchedGeometry.cpp" />
+    <ClCompile Include="..\source\paged-geom\BatchPage.cpp" />
+    <ClCompile Include="..\source\paged-geom\GrassLoader.cpp" />
+    <ClCompile Include="..\source\paged-geom\ImpostorPage.cpp" />
+    <ClCompile Include="..\source\paged-geom\PagedGeometry.cpp" />
+    <ClCompile Include="..\source\paged-geom\PropertyMaps.cpp" />
+    <ClCompile Include="..\source\paged-geom\StaticBillboardSet.cpp" />
+    <ClCompile Include="..\source\paged-geom\TreeLoader2D.cpp" />
+    <ClCompile Include="..\source\paged-geom\TreeLoader3D.cpp" />
+    <ClCompile Include="..\source\paged-geom\WindBatchedGeometry.cpp" />
+    <ClCompile Include="..\source\paged-geom\WindBatchPage.cpp" />
+    <ClCompile Include="..\source\sdl4ogre\sdlcursormanager.cpp" />
+    <ClCompile Include="..\source\sdl4ogre\sdlinputwrapper.cpp" />
+    <ClCompile Include="..\source\sdl4ogre\sdlwindowhelper.cpp" />
+    <ClCompile Include="..\source\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\source\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\source\tinyxml\tinyxml2.cpp" />
+    <ClCompile Include="..\source\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\source\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\source\shiny\Main\Factory.cpp" />
+    <ClCompile Include="..\source\shiny\Main\MaterialInstance.cpp" />
+    <ClCompile Include="..\source\shiny\Main\MaterialInstancePass.cpp" />
+    <ClCompile Include="..\source\shiny\Main\MaterialInstanceTextureUnit.cpp" />
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgreGpuProgram.cpp" />
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgreMaterial.cpp" />
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgreMaterialSerializer.cpp" />
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgrePass.cpp" />
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgrePlatform.cpp" />
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgreTextureUnitState.cpp" />
+    <ClCompile Include="..\source\shiny\Main\Platform.cpp" />
+    <ClCompile Include="..\source\shiny\Main\Preprocessor.cpp" />
+    <ClCompile Include="..\source\shiny\Main\PropertyBase.cpp" />
+    <ClCompile Include="..\source\shiny\Main\ScriptLoader.cpp" />
+    <ClCompile Include="..\source\shiny\Main\ShaderInstance.cpp" />
+    <ClCompile Include="..\source\shiny\Main\ShaderSet.cpp" />
+    <ClCompile Include="..\source\oics\ICSChannel.cpp" />
+    <ClCompile Include="..\source\oics\ICSControl.cpp" />
+    <ClCompile Include="..\source\oics\ICSInputControlSystem.cpp" />
+    <ClCompile Include="..\source\oics\ICSInputControlSystem_joystick.cpp" />
+    <ClCompile Include="..\source\oics\ICSInputControlSystem_keyboard.cpp" />
+    <ClCompile Include="..\source\oics\ICSInputControlSystem_mouse.cpp" />
+    <ClCompile Include="..\source\oics\ICSPrerequisites.cpp" />
+    <ClCompile Include="..\source\enet\callbacks.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\compress.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\host.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\list.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\packet.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\peer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\protocol.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\unix.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\win32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDbg|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\vdrift\joepack.h" />
+    <ClInclude Include="..\source\vdrift\joeserialize.h" />
+    <ClInclude Include="..\source\vdrift\model.h" />
+    <ClInclude Include="..\source\vdrift\model_joe03.h" />
+    <ClInclude Include="..\source\vdrift\model_obj.h" />
+    <ClInclude Include="..\source\vdrift\objectloader.h" />
+    <ClInclude Include="..\source\vdrift\texture.h" />
+    <ClInclude Include="..\source\vdrift\texturelibrary.h" />
+    <ClInclude Include="..\source\vdrift\track.h" />
+    <ClInclude Include="..\source\vdrift\track_object.h" />
+    <ClInclude Include="..\source\vdrift\vertexarray.h" />
+    <ClInclude Include="..\source\vdrift\bucketed_hashmap.h" />
+    <ClInclude Include="..\source\vdrift\dbl.h" />
+    <ClInclude Include="..\source\vdrift\endian_utility.h" />
+    <ClInclude Include="..\source\vdrift\forcefeedback.h" />
+    <ClInclude Include="..\source\vdrift\macros.h" />
+    <ClInclude Include="..\source\vdrift\optional.h" />
+    <ClInclude Include="..\source\vdrift\pairsort.h" />
+    <ClInclude Include="..\source\vdrift\quickmp.h" />
+    <ClInclude Include="..\source\vdrift\quickprof.h" />
+    <ClInclude Include="..\source\vdrift\reseatable_reference.h" />
+    <ClInclude Include="..\source\vdrift\toggle.h" />
+    <ClInclude Include="..\source\vdrift\unittest.h" />
+    <ClInclude Include="..\source\vdrift\game.h" />
+    <ClInclude Include="..\source\vdrift\par.h" />
+    <ClInclude Include="..\source\vdrift\timer.h" />
+    <ClInclude Include="..\source\vdrift\bezier.h" />
+    <ClInclude Include="..\source\vdrift\roadpatch.h" />
+    <ClInclude Include="..\source\vdrift\roadstrip.h" />
+    <ClInclude Include="..\source\vdrift\tracksurface.h" />
+    <ClInclude Include="..\source\ogre\pch.h" />
+    <ClInclude Include="..\source\vdrift\Buoyancy.h" />
+    <ClInclude Include="..\source\vdrift\BuoyMath.h" />
+    <ClInclude Include="..\source\vdrift\collision_world.h" />
+    <ClInclude Include="..\source\vdrift\crashdetection.h" />
+    <ClInclude Include="..\source\vdrift\suspensionbump.h" />
+    <ClInclude Include="..\source\vdrift\aabb.h" />
+    <ClInclude Include="..\source\vdrift\aabb_space_partitioning.h" />
+    <ClInclude Include="..\source\vdrift\linearframe.h" />
+    <ClInclude Include="..\source\vdrift\linearinterp.h" />
+    <ClInclude Include="..\source\vdrift\rigidbody.h" />
+    <ClInclude Include="..\source\vdrift\rotationalframe.h" />
+    <ClInclude Include="..\source\vdrift\tobullet.h" />
+    <ClInclude Include="..\source\vdrift\mathplane.h" />
+    <ClInclude Include="..\source\vdrift\mathvector.h" />
+    <ClInclude Include="..\source\vdrift\matrix3.h" />
+    <ClInclude Include="..\source\vdrift\matrix4.h" />
+    <ClInclude Include="..\source\vdrift\numprocessors.h" />
+    <ClInclude Include="..\source\vdrift\quaternion.h" />
+    <ClInclude Include="..\source\vdrift\spline.h" />
+    <ClInclude Include="..\source\vdrift\car.h" />
+    <ClInclude Include="..\source\vdrift\caraero.h" />
+    <ClInclude Include="..\source\vdrift\carbrake.h" />
+    <ClInclude Include="..\source\vdrift\carclutch.h" />
+    <ClInclude Include="..\source\vdrift\carcontrolmap_local.h" />
+    <ClInclude Include="..\source\vdrift\cardefs.h" />
+    <ClInclude Include="..\source\vdrift\cardifferential.h" />
+    <ClInclude Include="..\source\vdrift\cardynamics.h" />
+    <ClInclude Include="..\source\vdrift\carengine.h" />
+    <ClInclude Include="..\source\vdrift\carfueltank.h" />
+    <ClInclude Include="..\source\vdrift\carsuspension.h" />
+    <ClInclude Include="..\source\vdrift\cartire.h" />
+    <ClInclude Include="..\source\vdrift\cartransmission.h" />
+    <ClInclude Include="..\source\vdrift\carwheel.h" />
+    <ClInclude Include="..\source\vdrift\enginesoundinfo.h" />
+    <ClInclude Include="..\source\ogre\ChallengesXml.h" />
+    <ClInclude Include="..\source\ogre\ChampsXml.h" />
+    <ClInclude Include="..\source\vdrift\configfile.h" />
+    <ClInclude Include="..\source\ogre\half.hpp" />
+    <ClInclude Include="..\source\vdrift\pathmanager.h" />
+    <ClInclude Include="..\source\vdrift\settings.h" />
+    <ClInclude Include="..\source\ogre\common\settings_com.h" />
+    <ClInclude Include="..\source\ogre\BaseApp.h" />
+    <ClInclude Include="..\source\ogre\CInput.h" />
+    <ClInclude Include="..\source\ogre\Compositor.h" />
+    <ClInclude Include="..\source\ogre\FollowCamera.h" />
+    <ClInclude Include="..\source\ogre\LoadingBar.h" />
+    <ClInclude Include="..\source\ogre\SplitScreen.h" />
+    <ClInclude Include="..\source\ogre\CarModel.h" />
+    <ClInclude Include="..\source\ogre\CarPosInfo.h" />
+    <ClInclude Include="..\source\ogre\CarReflection.h" />
+    <ClInclude Include="..\source\ogre\Replay.h" />
+    <ClInclude Include="..\source\ogre\ReplayTrk.h" />
+    <ClInclude Include="..\source\ogre\common\WaterRTT.h" />
+    <ClInclude Include="..\source\ogre\CGui.h" />
+    <ClInclude Include="..\source\ogre\common\Gui_Def.h" />
+    <ClInclude Include="..\source\ogre\common\GuiCom.h" />
+    <ClInclude Include="..\data\materials\core.h" />
+    <ClInclude Include="..\data\materials\noise.h" />
+    <ClInclude Include="..\data\materials\shadows.h" />
+    <ClInclude Include="..\source\road\PaceNotes.h" />
+    <ClInclude Include="..\source\road\Road.h" />
+    <ClInclude Include="..\source\road\SplineBase.h" />
+    <ClInclude Include="..\source\ogre\common\Axes.h" />
+    <ClInclude Include="..\source\ogre\common\CScene.h" />
+    <ClInclude Include="..\source\ogre\common\PreviewTex.h" />
+    <ClInclude Include="..\source\ogre\common\TerrainMaterial.h" />
+    <ClInclude Include="..\source\ogre\common\GraphView.h" />
+    <ClInclude Include="..\source\ogre\common\Gui_Popup.h" />
+    <ClInclude Include="..\source\ogre\common\MultiList2.h" />
+    <ClInclude Include="..\source\ogre\common\PointerFix.h" />
+    <ClInclude Include="..\source\ogre\common\RenderBox.h" />
+    <ClInclude Include="..\source\ogre\common\RenderBoxScene.h" />
+    <ClInclude Include="..\source\ogre\common\Slider.h" />
+    <ClInclude Include="..\source\ogre\common\SliderValue.h" />
+    <ClInclude Include="..\source\ogre\CGame.h" />
+    <ClInclude Include="..\source\ogre\CHud.h" />
+    <ClInclude Include="..\source\ogre\common\data\BltObjects.h" />
+    <ClInclude Include="..\source\ogre\common\data\CData.h" />
+    <ClInclude Include="..\source\ogre\Def_Str.h" />
+    <ClInclude Include="..\source\ogre\common\data\FluidsXml.h" />
+    <ClInclude Include="..\source\ogre\common\RenderConst.h" />
+    <ClInclude Include="..\source\ogre\common\data\SceneXml.h" />
+    <ClInclude Include="..\source\ogre\common\data\TracksXml.h" />
+    <ClInclude Include="..\source\network\address.hpp" />
+    <ClInclude Include="..\source\network\enet-wrapper.hpp" />
+    <ClInclude Include="..\source\network\gameclient.hpp" />
+    <ClInclude Include="..\source\network\masterclient.hpp" />
+    <ClInclude Include="..\source\network\networkcallbacks.hpp" />
+    <ClInclude Include="..\source\network\peerinfo.hpp" />
+    <ClInclude Include="..\source\network\protocol.hpp" />
+    <ClInclude Include="..\source\network\types.hpp" />
+    <ClInclude Include="..\source\network\xtime.hpp" />
+    <ClInclude Include="..\source\ogre\Localization.h" />
+    <ClInclude Include="..\source\ogre\common\MyGUI_D3D11.h" />
+    <ClInclude Include="..\source\ogre\common\MessageBox\Attribute.h" />
+    <ClInclude Include="..\source\ogre\common\MessageBox\BaseLayout.h" />
+    <ClInclude Include="..\source\ogre\common\MessageBox\MessageBox.h" />
+    <ClInclude Include="..\source\ogre\common\MessageBox\MessageBoxStyle.h" />
+    <ClInclude Include="..\source\ogre\common\MessageBox\WrapsAttribute.h" />
+    <ClInclude Include="..\source\sound\SoundBase.h" />
+    <ClInclude Include="..\source\sound\SoundBaseMgr.h" />
+    <ClInclude Include="..\source\sound\SoundMgr.h" />
+    <ClInclude Include="..\source\sound\SoundReverbSets.h" />
+    <ClInclude Include="..\source\btOgre\BtOgreDebug.h" />
+    <ClInclude Include="..\source\btOgre\BtOgreGP.h" />
+    <ClInclude Include="..\source\btOgre\BtOgrePG.h" />
+    <ClInclude Include="..\source\btOgre\DynamicLines.h" />
+    <ClInclude Include="..\source\paged-geom\BatchedGeometry.h" />
+    <ClInclude Include="..\source\paged-geom\BatchPage.h" />
+    <ClInclude Include="..\source\paged-geom\GrassLoader.h" />
+    <ClInclude Include="..\source\paged-geom\ImpostorPage.h" />
+    <ClInclude Include="..\source\paged-geom\MersenneTwister.h" />
+    <ClInclude Include="..\source\paged-geom\PagedGeometry.h" />
+    <ClInclude Include="..\source\paged-geom\PagedGeometryConfig.h" />
+    <ClInclude Include="..\source\paged-geom\PropertyMaps.h" />
+    <ClInclude Include="..\source\paged-geom\RandomTable.h" />
+    <ClInclude Include="..\source\paged-geom\StaticBillboardSet.h" />
+    <ClInclude Include="..\source\paged-geom\TreeLoader2D.h" />
+    <ClInclude Include="..\source\paged-geom\TreeLoader3D.h" />
+    <ClInclude Include="..\source\paged-geom\WindBatchedGeometry.h" />
+    <ClInclude Include="..\source\paged-geom\WindBatchPage.h" />
+    <ClInclude Include="..\source\sdl4ogre\cursormanager.hpp" />
+    <ClInclude Include="..\source\sdl4ogre\events.h" />
+    <ClInclude Include="..\source\sdl4ogre\OISCompat.h" />
+    <ClInclude Include="..\source\sdl4ogre\sdlcursormanager.hpp" />
+    <ClInclude Include="..\source\sdl4ogre\sdlinputwrapper.hpp" />
+    <ClInclude Include="..\source\sdl4ogre\sdlwindowhelper.hpp" />
+    <ClInclude Include="..\source\tinyxml\tinystr.h" />
+    <ClInclude Include="..\source\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\source\tinyxml\tinyxml2.h" />
+    <ClInclude Include="..\source\shiny\Extra\core.h" />
+    <ClInclude Include="..\source\shiny\Main\Factory.hpp" />
+    <ClInclude Include="..\source\shiny\Main\Language.hpp" />
+    <ClInclude Include="..\source\shiny\Main\MaterialInstance.hpp" />
+    <ClInclude Include="..\source\shiny\Main\MaterialInstancePass.hpp" />
+    <ClInclude Include="..\source\shiny\Main\MaterialInstanceTextureUnit.hpp" />
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgreGpuProgram.hpp" />
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgreMaterial.hpp" />
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgreMaterialSerializer.hpp" />
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgrePass.hpp" />
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgrePlatform.hpp" />
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgreTextureUnitState.hpp" />
+    <ClInclude Include="..\source\shiny\Main\Platform.hpp" />
+    <ClInclude Include="..\source\shiny\Main\Preprocessor.hpp" />
+    <ClInclude Include="..\source\shiny\Main\PropertyBase.hpp" />
+    <ClInclude Include="..\source\shiny\Main\ScriptLoader.hpp" />
+    <ClInclude Include="..\source\shiny\Main\ShaderInstance.hpp" />
+    <ClInclude Include="..\source\shiny\Main\ShaderSet.hpp" />
+    <ClInclude Include="..\source\oics\ICSChannel.h" />
+    <ClInclude Include="..\source\oics\ICSChannelListener.h" />
+    <ClInclude Include="..\source\oics\ICSControl.h" />
+    <ClInclude Include="..\source\oics\ICSControlListener.h" />
+    <ClInclude Include="..\source\oics\ICSInputControlSystem.h" />
+    <ClInclude Include="..\source\oics\ICSPrerequisites.h" />
+    <ClInclude Include="..\source\enet\callbacks.h" />
+    <ClInclude Include="..\source\enet\enet.h" />
+    <ClInclude Include="..\source\enet\list.h" />
+    <ClInclude Include="..\source\enet\protocol.h" />
+    <ClInclude Include="..\source\enet\time.h" />
+    <ClInclude Include="..\source\enet\types.h" />
+    <ClInclude Include="..\source\enet\unix.h" />
+    <ClInclude Include="..\source\enet\utility.h" />
+    <ClInclude Include="..\source\enet\win32.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\cars\cameras.xml" />
+    <None Include="..\data\particles\car.particle" />
+    <None Include="..\config\cars.xml" />
+    <None Include="..\config\challenges.xml" />
+    <None Include="..\config\championships.xml" />
+    <None Include="..\config\colors.ini" />
+    <None Include="..\data\particles\fluids.particle" />
+    <None Include="..\data\materials2\fluids.xml" />
+    <None Include="..\config\game-default.cfg" />
+    <None Include="..\..\..\Users\cryham\AppData\Roaming\stuntrally\game.cfg" />
+    <None Include="..\..\..\Users\cryham\AppData\Roaming\stuntrally\log.txt" />
+    <None Include="..\..\..\Users\cryham\AppData\Roaming\stuntrally\ogre.log" />
+    <None Include="..\..\..\Users\cryham\AppData\Roaming\stuntrally\progress.xml" />
+    <None Include="..\..\..\Users\cryham\AppData\Roaming\stuntrally\progressL.xml" />
+    <None Include="..\Readme.txt" />
+    <None Include="..\data\carsim\normal\surfaces.cfg" />
+    <None Include="..\data\particles\tires.particle" />
+    <None Include="..\config\tracks.ini" />
+    <None Include="..\data\particles\weather.particle" />
+    <None Include="..\data\materials\angles.mat" />
+    <None Include="..\data\materials\angles.shader" />
+    <None Include="..\data\materials\angles.shaderset" />
+    <None Include="..\data\materials\arrow.mat" />
+    <None Include="..\data\materials\arrow.shader" />
+    <None Include="..\data\materials\arrow.shaderset" />
+    <None Include="..\data\materials\blend.mat" />
+    <None Include="..\data\materials\blend.shader" />
+    <None Include="..\data\materials\blend.shaderset" />
+    <None Include="..\data\hud\CarDbg.overlay" />
+    <None Include="..\data\hud\Focus.material" />
+    <None Include="..\data\materials\grassdens.mat" />
+    <None Include="..\data\materials\grassdens.shader" />
+    <None Include="..\data\materials\grassdens.shaderset" />
+    <None Include="..\data\hud\Hud.material" />
+    <None Include="..\data\materials\imposter.mat" />
+    <None Include="..\data\materials\imposter.shader" />
+    <None Include="..\data\materials\imposter.shaderset" />
+    <None Include="..\data\materials\main.mat" />
+    <None Include="..\data\materials\main.shader" />
+    <None Include="..\data\materials\main.shaderset" />
+    <None Include="..\data\materials\materials.lod" />
+    <None Include="..\data\materials\pacenote.mat" />
+    <None Include="..\data\materials\pacenote.shader" />
+    <None Include="..\data\materials\pacenote.shaderset" />
+    <None Include="..\data\materials2\rnd.material" />
+    <None Include="..\data\materials\shadowcaster.mat" />
+    <None Include="..\data\materials\shadowcaster.shader" />
+    <None Include="..\data\materials\shadowcaster.shaderset" />
+    <None Include="..\data\materials\stuntrally.configuration" />
+    <None Include="..\data\materials\terrain.shader" />
+    <None Include="..\data\materials\terrain.shaderset" />
+    <None Include="..\data\materials\water.mat" />
+    <None Include="..\data\materials\water.shader" />
+    <None Include="..\data\materials\water.shaderset" />
+    <None Include="..\data\materials\scene\car.mat" />
+    <None Include="..\data\materials\scene\car_particle.mat" />
+    <None Include="..\data\materials\scene\editor.mat" />
+    <None Include="..\data\materials\scene\grass.mat" />
+    <None Include="..\data\materials\scene\objects_dynamic.mat" />
+    <None Include="..\data\materials\scene\objects_static.mat" />
+    <None Include="..\data\materials\scene\pipe.mat" />
+    <None Include="..\data\materials\scene\road.mat" />
+    <None Include="..\data\materials\scene\sky.mat" />
+    <None Include="..\data\materials\scene\tire_particle.mat" />
+    <None Include="..\data\materials\scene\trees.mat" />
+    <None Include="..\data\materials\scene\trees_ch.mat" />
+    <None Include="..\data\materials\scene\trees_old.mat" />
+    <None Include="..\data\materials\vdrift\vdrift.mat" />
+    <None Include="..\data\materials\scene\water_particle.mat" />
+    <None Include="..\data\materials\scene\weather.mat" />
+    <None Include="..\data\compositor\bloom\Bloom2.compositor" />
+    <None Include="..\data\compositor\bloom\Bloom2.material" />
+    <None Include="..\data\compositor\bloom\Bloom2_ps20.glsl" />
+    <None Include="..\data\compositor\bloom\Bloom2_ps20.hlsl" />
+    <None Include="..\data\compositor\bloom\Blur_vs.glsl" />
+    <None Include="..\data\compositor\bloom\Blur_vs11.hlsl" />
+    <None Include="..\data\compositor\bloom\BlurH_ps20.glsl" />
+    <None Include="..\data\compositor\bloom\BlurH_ps20.hlsl" />
+    <None Include="..\data\compositor\bloom\BlurV_ps20.glsl" />
+    <None Include="..\data\compositor\bloom\BlurV_ps20.hlsl" />
+    <None Include="..\data\compositor\bloom\BrightBloom2_ps20.glsl" />
+    <None Include="..\data\compositor\bloom\BrightBloom2_ps20.hlsl" />
+    <None Include="..\data\compositor\hdr\hdr.cg" />
+    <None Include="..\data\compositor\hdr\hdr.compositor" />
+    <None Include="..\data\compositor\hdr\hdr.hlsl" />
+    <None Include="..\data\compositor\hdr\hdr.material" />
+    <None Include="..\data\compositor\hdr\hdr_bloom.glsl" />
+    <None Include="..\data\compositor\hdr\hdr_downscale2x2luminence.glsl" />
+    <None Include="..\data\compositor\hdr\hdr_downscale3x3.glsl" />
+    <None Include="..\data\compositor\hdr\hdr_downscale3x3brightpass.glsl" />
+    <None Include="..\data\compositor\hdr\hdr_finalToneMapping.glsl" />
+    <None Include="..\data\compositor\hdr\hdr_tonemap_util.glsl" />
+    <None Include="..\data\compositor\hdr\hdrutils.hlsl" />
+    <None Include="..\data\compositor\motionblur\Combine_fp.cg" />
+    <None Include="..\data\compositor\motionblur\MotionBlur.material" />
+    <None Include="..\data\compositor\StdQuad_vp.cg" />
+    <None Include="..\data\compositor\StdQuad_vp.glsl" />
+    <None Include="..\data\compositor\StdQuad_vp.program" />
+    <None Include="..\data\trees\collisions.xml" />
+    <None Include="..\source\network\DesignDoc.txt" />
+    <None Include="..\data\gui\core_blackblueskins.xml" />
+    <None Include="..\data\gui\core_blackbluetemplates.xml" />
+    <None Include="..\data\gui\core_font.xml" />
+    <None Include="..\data\gui\core_images.xml" />
+    <None Include="..\data\gui\core_language_en_tag.xml" />
+    <None Include="..\data\gui\Game.layout" />
+    <None Include="..\data\sounds\reverbs.xml" />
+    <None Include="..\data\sounds\sounds.cfg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

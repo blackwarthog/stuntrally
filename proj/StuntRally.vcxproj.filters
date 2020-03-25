@@ -1,0 +1,1637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="VDrift">
+      <UniqueIdentifier>{0e4b406d-19c1-4b26-a17b-edae71c2e61a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VDrift\Models">
+      <UniqueIdentifier>{22a12c08-c63b-45d2-926f-acec50314940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VDrift\Util">
+      <UniqueIdentifier>{e8311a78-ddce-49df-acb5-aabc52b1c11a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VDrift\Game">
+      <UniqueIdentifier>{ca28c8e2-bf32-4abb-8c0c-09da200825ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VDrift\road">
+      <UniqueIdentifier>{848bdfac-66e8-4205-b7d0-7f7577870a64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VDrift\main">
+      <UniqueIdentifier>{4960979c-3735-4e85-8bca-1c7b7b661c6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VDrift\Collis">
+      <UniqueIdentifier>{77aac1f4-016a-4867-b74d-8be8c77b45b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VDrift\Collis\road">
+      <UniqueIdentifier>{d2e58e3e-7ce7-4111-8c97-f2d2872fb7af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VDrift\Collis\CollisBase">
+      <UniqueIdentifier>{3c5e4511-0571-42c0-a557-ef15a5742837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VDrift\Collis\Math">
+      <UniqueIdentifier>{aac7a229-f7e8-4079-b9df-81066adec4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VDrift\Car">
+      <UniqueIdentifier>{1b8b8596-7eff-4bd0-93a9-83df9a0a84d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Set">
+      <UniqueIdentifier>{1ae4dfb1-a955-441c-ab81-7e92b628d004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre">
+      <UniqueIdentifier>{6fd1046e-57e1-470a-8650-9acf13fc17be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\BaseApp">
+      <UniqueIdentifier>{c02fb2e7-d1ed-46a6-badc-3291d56967fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\Scene">
+      <UniqueIdentifier>{e9af2ed6-7fe1-434a-a746-45b18c9cf3af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\Gui">
+      <UniqueIdentifier>{a1d89fb4-a7e9-498f-b644-980b01bd97a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\Gui\Common">
+      <UniqueIdentifier>{83d05c31-5f90-4e2c-8b0a-874dfc404625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\materials">
+      <UniqueIdentifier>{bf8f6df9-1538-4440-923b-bdcb6c83acfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\materials\scene">
+      <UniqueIdentifier>{10bd92c4-f572-4400-acfd-cab05c9f7729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\Road">
+      <UniqueIdentifier>{8cca31db-6051-4841-8fee-1e0065413267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\SceneCommon">
+      <UniqueIdentifier>{6d4284f3-7d91-4437-a6d2-4e82c98d34af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\SceneCommon\Widgets">
+      <UniqueIdentifier>{b211378f-a2b6-47f3-a2de-b602637112bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\mat-eff">
+      <UniqueIdentifier>{ae7e4a51-95fc-4ba1-b24c-8b5ef78e1ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\mat-eff\bloom">
+      <UniqueIdentifier>{d9c62452-18aa-4851-8f28-ede035f4ccd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\mat-eff\hdr">
+      <UniqueIdentifier>{984b54d4-fad4-462f-8353-74a0ed8d2554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\mat-eff\mot-blur">
+      <UniqueIdentifier>{f0078b07-4a94-44c5-8cab-da86ba784f9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\Game">
+      <UniqueIdentifier>{2bb94e22-2b6a-4818-8703-dfcc818d62ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\SceneComXml">
+      <UniqueIdentifier>{80dcfe63-59dc-4147-9092-8176297c06e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\network">
+      <UniqueIdentifier>{d55bdadd-8c13-4012-b89f-198b2046fc5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\Cfg">
+      <UniqueIdentifier>{95407f71-af2e-497e-b6e9-146912a45bcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\Cfg\MsgBox">
+      <UniqueIdentifier>{ed84e5dd-c196-4405-a2c7-4e984ed67742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ogre\Sound">
+      <UniqueIdentifier>{dd20ad08-b2ac-4ef3-bc04-50cc2074be3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{c411685b-3299-4ea0-be1c-abc32a1cdfa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\btOgre">
+      <UniqueIdentifier>{9cceb661-ef9d-4363-a2e1-2d19e10cdbff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\PagedGeom">
+      <UniqueIdentifier>{783669ba-d900-4764-9a0c-52051c601a80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\sdl4ogre">
+      <UniqueIdentifier>{13075b82-cbdf-4ac1-874a-d8b6be8b71a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\tinyxml">
+      <UniqueIdentifier>{3a2ac51c-fad1-4740-aea0-2ad4bb77b033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\shiny">
+      <UniqueIdentifier>{3dc3b3fb-876d-44d3-bde9-ccaf2fe2cbe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\oics">
+      <UniqueIdentifier>{d39b742b-4ad0-4be9-9b68-972f765ec798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\enet">
+      <UniqueIdentifier>{09dc2301-a0f1-4724-906a-95fc880db2d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\vdrift\joepack.cpp">
+      <Filter>VDrift\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\joeserialize.cpp">
+      <Filter>VDrift\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\model.cpp">
+      <Filter>VDrift\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\model_joe03.cpp">
+      <Filter>VDrift\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\model_obj.cpp">
+      <Filter>VDrift\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\objectloader.cpp">
+      <Filter>VDrift\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\track.cpp">
+      <Filter>VDrift\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\track_object.cpp">
+      <Filter>VDrift\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\vertexarray.cpp">
+      <Filter>VDrift\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\endian_utility.cpp">
+      <Filter>VDrift\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\forcefeedback.cpp">
+      <Filter>VDrift\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\optional.cpp">
+      <Filter>VDrift\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\reseatable_reference.cpp">
+      <Filter>VDrift\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\toggle.cpp">
+      <Filter>VDrift\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\game.cpp">
+      <Filter>VDrift\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\par.cpp">
+      <Filter>VDrift\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\timer.cpp">
+      <Filter>VDrift\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\bezier.cpp">
+      <Filter>VDrift\road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\roadpatch.cpp">
+      <Filter>VDrift\road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\roadstrip.cpp">
+      <Filter>VDrift\road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\main.cpp">
+      <Filter>VDrift\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\pch.cpp">
+      <Filter>VDrift\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\Buoyancy.cpp">
+      <Filter>VDrift\Collis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\collision_world.cpp">
+      <Filter>VDrift\Collis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\crashdetection.cpp">
+      <Filter>VDrift\Collis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\suspensionbump.cpp">
+      <Filter>VDrift\Collis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\aabb.cpp">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\aabb_space_partitioning.cpp">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\linearframe.cpp">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\linearinterp.cpp">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\rigidbody.cpp">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\rotationalframe.cpp">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\mathplane.cpp">
+      <Filter>VDrift\Collis\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\mathvector.cpp">
+      <Filter>VDrift\Collis\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\quaternion.cpp">
+      <Filter>VDrift\Collis\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\car.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\car_sound.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\caraero.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\carbrake.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\carclutch.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\carcontrolmap_local.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\cardifferential.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\cardynamics.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\cardynamics_load.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\cardynamics_simulate.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\cardynamics_update.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\carengine.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\carsuspension.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\cartire.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\cartransmission.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\carwheel.cpp">
+      <Filter>VDrift\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\ChallengesXml.cpp">
+      <Filter>Set</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\ChampsXml.cpp">
+      <Filter>Set</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\configfile.cpp">
+      <Filter>Set</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\pathmanager.cpp">
+      <Filter>Set</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\vdrift\settings.cpp">
+      <Filter>Set</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\settings_com.cpp">
+      <Filter>Set</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\BaseApp.cpp">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\BaseApp_Create.cpp">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\BaseApp_Effects.cpp">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\CInput.cpp">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Compositor.cpp">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\FollowCamera.cpp">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\LoadingBar.cpp">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\SplitScreen.cpp">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\CarModel_Create.cpp">
+      <Filter>Ogre\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\CarModel_Update.cpp">
+      <Filter>Ogre\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\CarPosInfo.cpp">
+      <Filter>Ogre\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\CarReflection.cpp">
+      <Filter>Ogre\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Replay.cpp">
+      <Filter>Ogre\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\ReplayOld.cpp">
+      <Filter>Ogre\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\ReplayTrk.cpp">
+      <Filter>Ogre\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\SceneInit.cpp">
+      <Filter>Ogre\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\WaterRTT.cpp">
+      <Filter>Ogre\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\CGui.cpp">
+      <Filter>Ogre\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Gui_Events.cpp">
+      <Filter>Ogre\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Gui_Init.cpp">
+      <Filter>Ogre\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Gui_Input.cpp">
+      <Filter>Ogre\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Gui_KeyPress.cpp">
+      <Filter>Ogre\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Gui_Network.cpp">
+      <Filter>Ogre\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Gui_Replay.cpp">
+      <Filter>Ogre\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Gui_Tweak.cpp">
+      <Filter>Ogre\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Gui_Util.cpp">
+      <Filter>Ogre\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\GuiCom_Options.cpp">
+      <Filter>Ogre\Gui\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\GuiCom_Screen.cpp">
+      <Filter>Ogre\Gui\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\GuiCom_Set.cpp">
+      <Filter>Ogre\Gui\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\GuiCom_Track.cpp">
+      <Filter>Ogre\Gui\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\GuiCom_TrackUpd.cpp">
+      <Filter>Ogre\Gui\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\GuiCom_Util.cpp">
+      <Filter>Ogre\Gui\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\road\PaceNotes.cpp">
+      <Filter>Ogre\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\road\PaceNotesGen.cpp">
+      <Filter>Ogre\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\road\Road_Edit.cpp">
+      <Filter>Ogre\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\road\Road_File.cpp">
+      <Filter>Ogre\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\road\Road_Markers.cpp">
+      <Filter>Ogre\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\road\Road_Mesh.cpp">
+      <Filter>Ogre\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\road\Road_Prepass.cpp">
+      <Filter>Ogre\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\road\Road_Rebuild.cpp">
+      <Filter>Ogre\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\road\SplineBase.cpp">
+      <Filter>Ogre\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\Axes.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\CScene.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\PreviewTex.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\SceneFluids.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\SceneObjects.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\SceneTrees.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\Shadows.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\simplexnoise.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\Sky.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\Terrain.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\TerrainBlend.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\TerrainMaterial.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\Tools.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\TrackVdr.cpp">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\GraphView.cpp">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\Gui_Popup.cpp">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\MultiList2.cpp">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\PointerFix.cpp">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\RenderBoxScene.cpp">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\Slider.cpp">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\SliderValue.cpp">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\CGame.cpp">
+      <Filter>Ogre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Challenges.cpp">
+      <Filter>Ogre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\ChampChall.cpp">
+      <Filter>Ogre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Championships.cpp">
+      <Filter>Ogre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\CHud.cpp">
+      <Filter>Ogre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Hud_Create.cpp">
+      <Filter>Ogre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Hud_Graphs.cpp">
+      <Filter>Ogre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Hud_Update.cpp">
+      <Filter>Ogre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Update.cpp">
+      <Filter>Ogre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Update_PerfTest.cpp">
+      <Filter>Ogre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\Update_Poses.cpp">
+      <Filter>Ogre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\data\BltObjects.cpp">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\data\CData.cpp">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\data\FluidsXml.cpp">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\data\SceneXml.cpp">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\data\SceneXml_Load.cpp">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\data\TracksXml.cpp">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\network\gameclient.cpp">
+      <Filter>Ogre\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\network\masterclient.cpp">
+      <Filter>Ogre\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\MyGUI_D3D11.cpp">
+      <Filter>Ogre\Cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\MessageBox\MessageBox.cpp">
+      <Filter>Ogre\Cfg\MsgBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ogre\common\MessageBox\MessageBoxStyle.cpp">
+      <Filter>Ogre\Cfg\MsgBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\sound\SoundBase.cpp">
+      <Filter>Ogre\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\sound\SoundBaseMgr.cpp">
+      <Filter>Ogre\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\sound\SoundBaseMgrUtil.cpp">
+      <Filter>Ogre\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\sound\SoundMgr.cpp">
+      <Filter>Ogre\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\btOgre\BtOgre.cpp">
+      <Filter>Libs\btOgre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\btOgre\BtOgreAnim.cpp">
+      <Filter>Libs\btOgre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\btOgre\BtOgreDebug.cpp">
+      <Filter>Libs\btOgre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\btOgre\DynamicLines.cpp">
+      <Filter>Libs\btOgre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\paged-geom\BatchedGeometry.cpp">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\paged-geom\BatchPage.cpp">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\paged-geom\GrassLoader.cpp">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\paged-geom\ImpostorPage.cpp">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\paged-geom\PagedGeometry.cpp">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\paged-geom\PropertyMaps.cpp">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\paged-geom\StaticBillboardSet.cpp">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\paged-geom\TreeLoader2D.cpp">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\paged-geom\TreeLoader3D.cpp">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\paged-geom\WindBatchedGeometry.cpp">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\paged-geom\WindBatchPage.cpp">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\sdl4ogre\sdlcursormanager.cpp">
+      <Filter>Libs\sdl4ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\sdl4ogre\sdlinputwrapper.cpp">
+      <Filter>Libs\sdl4ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\sdl4ogre\sdlwindowhelper.cpp">
+      <Filter>Libs\sdl4ogre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tinyxml\tinystr.cpp">
+      <Filter>Libs\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tinyxml\tinyxml.cpp">
+      <Filter>Libs\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tinyxml\tinyxml2.cpp">
+      <Filter>Libs\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tinyxml\tinyxmlerror.cpp">
+      <Filter>Libs\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tinyxml\tinyxmlparser.cpp">
+      <Filter>Libs\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Main\Factory.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Main\MaterialInstance.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Main\MaterialInstancePass.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Main\MaterialInstanceTextureUnit.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgreGpuProgram.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgreMaterial.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgreMaterialSerializer.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgrePass.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgrePlatform.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Platforms\Ogre\OgreTextureUnitState.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Main\Platform.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Main\Preprocessor.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Main\PropertyBase.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Main\ScriptLoader.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Main\ShaderInstance.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shiny\Main\ShaderSet.cpp">
+      <Filter>Libs\shiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\oics\ICSChannel.cpp">
+      <Filter>Libs\oics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\oics\ICSControl.cpp">
+      <Filter>Libs\oics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\oics\ICSInputControlSystem.cpp">
+      <Filter>Libs\oics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\oics\ICSInputControlSystem_joystick.cpp">
+      <Filter>Libs\oics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\oics\ICSInputControlSystem_keyboard.cpp">
+      <Filter>Libs\oics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\oics\ICSInputControlSystem_mouse.cpp">
+      <Filter>Libs\oics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\oics\ICSPrerequisites.cpp">
+      <Filter>Libs\oics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\callbacks.c">
+      <Filter>Libs\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\compress.c">
+      <Filter>Libs\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\host.c">
+      <Filter>Libs\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\list.c">
+      <Filter>Libs\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\packet.c">
+      <Filter>Libs\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\peer.c">
+      <Filter>Libs\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\protocol.c">
+      <Filter>Libs\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\unix.c">
+      <Filter>Libs\enet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\enet\win32.c">
+      <Filter>Libs\enet</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\vdrift\joepack.h">
+      <Filter>VDrift\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\joeserialize.h">
+      <Filter>VDrift\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\model.h">
+      <Filter>VDrift\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\model_joe03.h">
+      <Filter>VDrift\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\model_obj.h">
+      <Filter>VDrift\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\objectloader.h">
+      <Filter>VDrift\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\texture.h">
+      <Filter>VDrift\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\texturelibrary.h">
+      <Filter>VDrift\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\track.h">
+      <Filter>VDrift\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\track_object.h">
+      <Filter>VDrift\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\vertexarray.h">
+      <Filter>VDrift\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\bucketed_hashmap.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\dbl.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\endian_utility.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\forcefeedback.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\macros.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\optional.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\pairsort.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\quickmp.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\quickprof.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\reseatable_reference.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\toggle.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\unittest.h">
+      <Filter>VDrift\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\game.h">
+      <Filter>VDrift\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\par.h">
+      <Filter>VDrift\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\timer.h">
+      <Filter>VDrift\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\bezier.h">
+      <Filter>VDrift\road</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\roadpatch.h">
+      <Filter>VDrift\road</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\roadstrip.h">
+      <Filter>VDrift\road</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\tracksurface.h">
+      <Filter>VDrift\road</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\pch.h">
+      <Filter>VDrift\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\Buoyancy.h">
+      <Filter>VDrift\Collis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\BuoyMath.h">
+      <Filter>VDrift\Collis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\collision_world.h">
+      <Filter>VDrift\Collis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\crashdetection.h">
+      <Filter>VDrift\Collis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\suspensionbump.h">
+      <Filter>VDrift\Collis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\aabb.h">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\aabb_space_partitioning.h">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\linearframe.h">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\linearinterp.h">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\rigidbody.h">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\rotationalframe.h">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\tobullet.h">
+      <Filter>VDrift\Collis\CollisBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\mathplane.h">
+      <Filter>VDrift\Collis\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\mathvector.h">
+      <Filter>VDrift\Collis\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\matrix3.h">
+      <Filter>VDrift\Collis\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\matrix4.h">
+      <Filter>VDrift\Collis\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\numprocessors.h">
+      <Filter>VDrift\Collis\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\quaternion.h">
+      <Filter>VDrift\Collis\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\spline.h">
+      <Filter>VDrift\Collis\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\car.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\caraero.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\carbrake.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\carclutch.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\carcontrolmap_local.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\cardefs.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\cardifferential.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\cardynamics.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\carengine.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\carfueltank.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\carsuspension.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\cartire.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\cartransmission.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\carwheel.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\enginesoundinfo.h">
+      <Filter>VDrift\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\ChallengesXml.h">
+      <Filter>Set</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\ChampsXml.h">
+      <Filter>Set</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\configfile.h">
+      <Filter>Set</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\half.hpp">
+      <Filter>Set</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\pathmanager.h">
+      <Filter>Set</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vdrift\settings.h">
+      <Filter>Set</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\settings_com.h">
+      <Filter>Set</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\BaseApp.h">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\CInput.h">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\Compositor.h">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\FollowCamera.h">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\LoadingBar.h">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\SplitScreen.h">
+      <Filter>Ogre\BaseApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\CarModel.h">
+      <Filter>Ogre\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\CarPosInfo.h">
+      <Filter>Ogre\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\CarReflection.h">
+      <Filter>Ogre\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\Replay.h">
+      <Filter>Ogre\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\ReplayTrk.h">
+      <Filter>Ogre\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\WaterRTT.h">
+      <Filter>Ogre\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\CGui.h">
+      <Filter>Ogre\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\Gui_Def.h">
+      <Filter>Ogre\Gui\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\GuiCom.h">
+      <Filter>Ogre\Gui\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data\materials\core.h">
+      <Filter>Ogre\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data\materials\noise.h">
+      <Filter>Ogre\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data\materials\shadows.h">
+      <Filter>Ogre\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\road\PaceNotes.h">
+      <Filter>Ogre\Road</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\road\Road.h">
+      <Filter>Ogre\Road</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\road\SplineBase.h">
+      <Filter>Ogre\Road</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\Axes.h">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\CScene.h">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\PreviewTex.h">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\TerrainMaterial.h">
+      <Filter>Ogre\SceneCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\GraphView.h">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\Gui_Popup.h">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\MultiList2.h">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\PointerFix.h">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\RenderBox.h">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\RenderBoxScene.h">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\Slider.h">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\SliderValue.h">
+      <Filter>Ogre\SceneCommon\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\CGame.h">
+      <Filter>Ogre\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\CHud.h">
+      <Filter>Ogre\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\data\BltObjects.h">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\data\CData.h">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\Def_Str.h">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\data\FluidsXml.h">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\RenderConst.h">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\data\SceneXml.h">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\data\TracksXml.h">
+      <Filter>Ogre\SceneComXml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\network\address.hpp">
+      <Filter>Ogre\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\network\enet-wrapper.hpp">
+      <Filter>Ogre\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\network\gameclient.hpp">
+      <Filter>Ogre\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\network\masterclient.hpp">
+      <Filter>Ogre\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\network\networkcallbacks.hpp">
+      <Filter>Ogre\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\network\peerinfo.hpp">
+      <Filter>Ogre\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\network\protocol.hpp">
+      <Filter>Ogre\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\network\types.hpp">
+      <Filter>Ogre\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\network\xtime.hpp">
+      <Filter>Ogre\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\Localization.h">
+      <Filter>Ogre\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\MyGUI_D3D11.h">
+      <Filter>Ogre\Cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\MessageBox\Attribute.h">
+      <Filter>Ogre\Cfg\MsgBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\MessageBox\BaseLayout.h">
+      <Filter>Ogre\Cfg\MsgBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\MessageBox\MessageBox.h">
+      <Filter>Ogre\Cfg\MsgBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\MessageBox\MessageBoxStyle.h">
+      <Filter>Ogre\Cfg\MsgBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ogre\common\MessageBox\WrapsAttribute.h">
+      <Filter>Ogre\Cfg\MsgBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sound\SoundBase.h">
+      <Filter>Ogre\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sound\SoundBaseMgr.h">
+      <Filter>Ogre\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sound\SoundMgr.h">
+      <Filter>Ogre\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sound\SoundReverbSets.h">
+      <Filter>Ogre\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\btOgre\BtOgreDebug.h">
+      <Filter>Libs\btOgre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\btOgre\BtOgreGP.h">
+      <Filter>Libs\btOgre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\btOgre\BtOgrePG.h">
+      <Filter>Libs\btOgre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\btOgre\DynamicLines.h">
+      <Filter>Libs\btOgre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\BatchedGeometry.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\BatchPage.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\GrassLoader.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\ImpostorPage.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\MersenneTwister.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\PagedGeometry.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\PagedGeometryConfig.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\PropertyMaps.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\RandomTable.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\StaticBillboardSet.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\TreeLoader2D.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\TreeLoader3D.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\WindBatchedGeometry.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\paged-geom\WindBatchPage.h">
+      <Filter>Libs\PagedGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sdl4ogre\cursormanager.hpp">
+      <Filter>Libs\sdl4ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sdl4ogre\events.h">
+      <Filter>Libs\sdl4ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sdl4ogre\OISCompat.h">
+      <Filter>Libs\sdl4ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sdl4ogre\sdlcursormanager.hpp">
+      <Filter>Libs\sdl4ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sdl4ogre\sdlinputwrapper.hpp">
+      <Filter>Libs\sdl4ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sdl4ogre\sdlwindowhelper.hpp">
+      <Filter>Libs\sdl4ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\tinyxml\tinystr.h">
+      <Filter>Libs\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\tinyxml\tinyxml.h">
+      <Filter>Libs\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\tinyxml\tinyxml2.h">
+      <Filter>Libs\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Extra\core.h">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Main\Factory.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Main\Language.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Main\MaterialInstance.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Main\MaterialInstancePass.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Main\MaterialInstanceTextureUnit.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgreGpuProgram.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgreMaterial.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgreMaterialSerializer.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgrePass.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgrePlatform.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Platforms\Ogre\OgreTextureUnitState.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Main\Platform.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Main\Preprocessor.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Main\PropertyBase.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Main\ScriptLoader.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Main\ShaderInstance.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shiny\Main\ShaderSet.hpp">
+      <Filter>Libs\shiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\oics\ICSChannel.h">
+      <Filter>Libs\oics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\oics\ICSChannelListener.h">
+      <Filter>Libs\oics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\oics\ICSControl.h">
+      <Filter>Libs\oics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\oics\ICSControlListener.h">
+      <Filter>Libs\oics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\oics\ICSInputControlSystem.h">
+      <Filter>Libs\oics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\oics\ICSPrerequisites.h">
+      <Filter>Libs\oics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\enet\callbacks.h">
+      <Filter>Libs\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\enet\enet.h">
+      <Filter>Libs\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\enet\list.h">
+      <Filter>Libs\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\enet\protocol.h">
+      <Filter>Libs\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\enet\time.h">
+      <Filter>Libs\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\enet\types.h">
+      <Filter>Libs\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\enet\unix.h">
+      <Filter>Libs\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\enet\utility.h">
+      <Filter>Libs\enet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\enet\win32.h">
+      <Filter>Libs\enet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\cars\cameras.xml">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\data\particles\car.particle">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\config\cars.xml">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\config\challenges.xml">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\config\championships.xml">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\config\colors.ini">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\data\particles\fluids.particle">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\data\materials2\fluids.xml">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\config\game-default.cfg">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\..\..\Users\cryham\AppData\Roaming\stuntrally\game.cfg">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\..\..\Users\cryham\AppData\Roaming\stuntrally\log.txt">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\..\..\Users\cryham\AppData\Roaming\stuntrally\ogre.log">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\..\..\Users\cryham\AppData\Roaming\stuntrally\progress.xml">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\..\..\Users\cryham\AppData\Roaming\stuntrally\progressL.xml">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\Readme.txt">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\data\carsim\normal\surfaces.cfg">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\data\particles\tires.particle">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\config\tracks.ini">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\data\particles\weather.particle">
+      <Filter>Set</Filter>
+    </None>
+    <None Include="..\data\materials\angles.mat">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\angles.shader">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\angles.shaderset">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\arrow.mat">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\arrow.shader">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\arrow.shaderset">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\blend.mat">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\blend.shader">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\blend.shaderset">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\hud\CarDbg.overlay">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\hud\Focus.material">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\grassdens.mat">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\grassdens.shader">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\grassdens.shaderset">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\hud\Hud.material">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\imposter.mat">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\imposter.shader">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\imposter.shaderset">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\main.mat">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\main.shader">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\main.shaderset">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\materials.lod">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\pacenote.mat">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\pacenote.shader">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\pacenote.shaderset">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials2\rnd.material">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\shadowcaster.mat">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\shadowcaster.shader">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\shadowcaster.shaderset">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\stuntrally.configuration">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\terrain.shader">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\terrain.shaderset">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\water.mat">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\water.shader">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\water.shaderset">
+      <Filter>Ogre\materials</Filter>
+    </None>
+    <None Include="..\data\materials\scene\car.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\car_particle.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\editor.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\grass.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\objects_dynamic.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\objects_static.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\pipe.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\road.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\sky.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\tire_particle.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\trees.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\trees_ch.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\trees_old.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\vdrift\vdrift.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\water_particle.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\materials\scene\weather.mat">
+      <Filter>Ogre\materials\scene</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\Bloom2.compositor">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\Bloom2.material">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\Bloom2_ps20.glsl">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\Bloom2_ps20.hlsl">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\Blur_vs.glsl">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\Blur_vs11.hlsl">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\BlurH_ps20.glsl">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\BlurH_ps20.hlsl">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\BlurV_ps20.glsl">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\BlurV_ps20.hlsl">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\BrightBloom2_ps20.glsl">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\bloom\BrightBloom2_ps20.hlsl">
+      <Filter>Ogre\mat-eff\bloom</Filter>
+    </None>
+    <None Include="..\data\compositor\hdr\hdr.cg">
+      <Filter>Ogre\mat-eff\hdr</Filter>
+    </None>
+    <None Include="..\data\compositor\hdr\hdr.compositor">
+      <Filter>Ogre\mat-eff\hdr</Filter>
+    </None>
+    <None Include="..\data\compositor\hdr\hdr.hlsl">
+      <Filter>Ogre\mat-eff\hdr</Filter>
+    </None>
+    <None Include="..\data\compositor\hdr\hdr.material">
+      <Filter>Ogre\mat-eff\hdr</Filter>
+    </None>
+    <None Include="..\data\compositor\hdr\hdr_bloom.glsl">
+      <Filter>Ogre\mat-eff\hdr</Filter>
+    </None>
+    <None Include="..\data\compositor\hdr\hdr_downscale2x2luminence.glsl">
+      <Filter>Ogre\mat-eff\hdr</Filter>
+    </None>
+    <None Include="..\data\compositor\hdr\hdr_downscale3x3.glsl">
+      <Filter>Ogre\mat-eff\hdr</Filter>
+    </None>
+    <None Include="..\data\compositor\hdr\hdr_downscale3x3brightpass.glsl">
+      <Filter>Ogre\mat-eff\hdr</Filter>
+    </None>
+    <None Include="..\data\compositor\hdr\hdr_finalToneMapping.glsl">
+      <Filter>Ogre\mat-eff\hdr</Filter>
+    </None>
+    <None Include="..\data\compositor\hdr\hdr_tonemap_util.glsl">
+      <Filter>Ogre\mat-eff\hdr</Filter>
+    </None>
+    <None Include="..\data\compositor\hdr\hdrutils.hlsl">
+      <Filter>Ogre\mat-eff\hdr</Filter>
+    </None>
+    <None Include="..\data\compositor\motionblur\Combine_fp.cg">
+      <Filter>Ogre\mat-eff\mot-blur</Filter>
+    </None>
+    <None Include="..\data\compositor\motionblur\MotionBlur.material">
+      <Filter>Ogre\mat-eff\mot-blur</Filter>
+    </None>
+    <None Include="..\data\compositor\StdQuad_vp.cg">
+      <Filter>Ogre\mat-eff\mot-blur</Filter>
+    </None>
+    <None Include="..\data\compositor\StdQuad_vp.glsl">
+      <Filter>Ogre\mat-eff\mot-blur</Filter>
+    </None>
+    <None Include="..\data\compositor\StdQuad_vp.program">
+      <Filter>Ogre\mat-eff\mot-blur</Filter>
+    </None>
+    <None Include="..\data\trees\collisions.xml">
+      <Filter>Ogre\SceneComXml</Filter>
+    </None>
+    <None Include="..\source\network\DesignDoc.txt">
+      <Filter>Ogre\network</Filter>
+    </None>
+    <None Include="..\data\gui\core_blackblueskins.xml">
+      <Filter>Ogre\Cfg</Filter>
+    </None>
+    <None Include="..\data\gui\core_blackbluetemplates.xml">
+      <Filter>Ogre\Cfg</Filter>
+    </None>
+    <None Include="..\data\gui\core_font.xml">
+      <Filter>Ogre\Cfg</Filter>
+    </None>
+    <None Include="..\data\gui\core_images.xml">
+      <Filter>Ogre\Cfg</Filter>
+    </None>
+    <None Include="..\data\gui\core_language_en_tag.xml">
+      <Filter>Ogre\Cfg</Filter>
+    </None>
+    <None Include="..\data\gui\Game.layout">
+      <Filter>Ogre\Cfg</Filter>
+    </None>
+    <None Include="..\data\sounds\reverbs.xml">
+      <Filter>Ogre\Sound</Filter>
+    </None>
+    <None Include="..\data\sounds\sounds.cfg">
+      <Filter>Ogre\Sound</Filter>
+    </None>
+  </ItemGroup>
+</Project>
