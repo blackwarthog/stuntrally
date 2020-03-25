@@ -7,5 +7,8 @@
 1. Download and run [Stunt Rally for Windows](http://stuntrally.tuxfamily.org/downloads) to install all requirements
 1. Create a folder c:\v
 1. Clone my repository in c:\v\stuntrally
-1. Download this zip and extract in c:\v
-
+1. [Download this zip](https://drive.google.com/file/d/1JjeRxORnfiyswJ8LjFXj5Fds77nKFh25/view?usp=sharing) and extract in c:\v
+1. Run c:\v\oalinst.exe
+1. Open c:\v\stuntrally\proj\StuntRally.sln
+1. Compile
+Done!
