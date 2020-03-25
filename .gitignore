@@ -22,8 +22,6 @@ CMakeLists.txt.user*
 *.user
 
 *.lnk
-StuntRally*.*
-SR?Editor*.*
 
 #--  transl
 locale/translation*
