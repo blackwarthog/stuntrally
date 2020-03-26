@@ -380,7 +380,7 @@ struct MyRayResultCallback : public btCollisionWorld::RayResultCallback
 		
 	virtual	btScalar	addSingleResult(btCollisionWorld::LocalRayResult& rayResult, bool normalInWorldSpace)
 	{
-		btCollisionObject* obj = rayResult.m_collisionObject;
+		const btCollisionObject* obj = rayResult.m_collisionObject;
 		if (obj == m_exclude)
 			return 1.0;
 					
