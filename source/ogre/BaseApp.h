@@ -12,7 +12,7 @@ namespace MyGUI{  class OgreD3D11Platform;  class OgrePlatform;  }
 namespace Ogre {  class SceneNode;  class Root;  class SceneManager;  class RenderWindow; }
 namespace sh   {  class Factory;  }
 
-class MasterClient;  class P2PGameClient;
+class MasterClient;  class P2PGameClient;  class StatusServer;
 
 
 //  gui
@@ -172,5 +172,6 @@ public:
 	///  networking
 	boost::scoped_ptr<MasterClient> mMasterClient;
 	boost::scoped_ptr<P2PGameClient> mClient;
+	boost::scoped_ptr<StatusServer> mStatusServer;
 	LobbyState mLobbyState;
 };

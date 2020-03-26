@@ -7,6 +7,7 @@
 #include "../vdrift/settings.h"
 #include "../network/masterclient.hpp"
 #include "../network/gameclient.hpp"
+#include "../network/statusserver.hpp"
 
 #include "Localization.h"
 #include "SplitScreen.h"
@@ -179,7 +180,8 @@ BaseApp::BaseApp()
 
 	,bSizeHUD(true), bRecreateHUD(false), bAssignKey(false)
 	, bLoading(false), iLoad1stFrames(0), bLoadingEnd(0), bSimulating(0)
-	,mMasterClient(), mClient(), mLobbyState(DISCONNECTED)
+	,mMasterClient(), mClient(), mStatusServer()
+	,mLobbyState(DISCONNECTED)
 	,ndSky(0),	mbWireFrame(0)
 	,iCurCam(0), mSplitMgr(0), motionBlurIntensity(0.9)
 	,mMouseX(0), mMouseY(0)

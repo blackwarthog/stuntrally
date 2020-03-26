@@ -5,6 +5,7 @@
 #include "../vdrift/pathmanager.h"
 #include "../vdrift/settings.h"
 #include "../network/enet-wrapper.hpp"
+#include "../network/statusserver.hpp"
 #include <string>
 #include <sstream>
 #include <list>
@@ -123,6 +124,7 @@ void LoadDefaultSet(SETTINGS* settings, string setFile)
 	App* pApp = new App(settings, pGame);
 	pApp->mRoot = root;
 	pGame->app = pApp;
+	pApp->mStatusServer.reset(new StatusServer());
 
 	try
 	{

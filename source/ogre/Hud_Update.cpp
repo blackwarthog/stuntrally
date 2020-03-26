@@ -9,6 +9,7 @@
 #include "../vdrift/game.h"
 #include "../vdrift/quickprof.h"
 #include "../road/Road.h"
+#include "../network/statusserver.hpp"
 #include "CGame.h"
 #include "CHud.h"
 #include "CGui.h"
@@ -70,8 +71,16 @@ void CHud::GetVals(int id, float* vel, float* rpm, float* clutch, int* gear)
 		*gear = pCar->GetGear();
 		//*clutch = pCar->GetClutch();  // todo: problems in multi thr1
 		float odo = pCar->CalcOdometer(*vel);
+		MATHVECTOR<float,3> position = pCar->GetPosition();
 		
-		// todo: UPDATE TCP SERVER HERE
+		// update status server
+		if (app->mStatusServer) {
+			StatusServer::Status status;
+			status.odometer = odo;
+			status.longitude = position[0];
+			status.latitude = position[1];
+			app->mStatusServer->updateStatus(status);
+		}
 	}
 	if (app->bRplPlay)
 	{
