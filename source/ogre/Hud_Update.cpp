@@ -70,11 +70,12 @@ void CHud::GetVals(int id, float* vel, float* rpm, float* clutch, int* gear)
 		*rpm = pCar->GetEngineRPM();  
 		*gear = pCar->GetGear();
 		//*clutch = pCar->GetClutch();  // todo: problems in multi thr1
-		float odo = pCar->CalcOdometer(*vel);
-		MATHVECTOR<float,3> position = pCar->GetPosition();
-		
+
 		// update status server
 		if (app->mStatusServer) {
+			float odo = pCar->GetOdometer();
+			MATHVECTOR<float,3> position = pCar->GetPosition();
+
 			StatusServer::Status status;
 			status.odometer = odo;
 			status.longitude = position[0];

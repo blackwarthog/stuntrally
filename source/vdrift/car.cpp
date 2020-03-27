@@ -24,7 +24,7 @@
 ///  ctor
 CAR::CAR()
 	:pSet(0), pApp(0), id(0), pCarM(0)
-	,odometer(-1.f)
+	,odometer(0)
 	,last_steer(0)
 	,iCamNext(0), bLastChk(0),bLastChkOld(0)
 	,bRewind(0),bRewindOld(0),timeRew(0.f)
@@ -152,7 +152,15 @@ bool CAR::Load(class App* pApp1,
 void CAR::Update(double dt)
 {
 	dynamics.Update();
-	
+
+	// update odometer
+	WHEEL_POSITION wi = REAR_LEFT;
+	if (wi >= numWheels) wi = FRONT_LEFT;
+	double velocity = wi < numWheels
+	               ? dynamics.GetWheel(wi).GetAngularVelocity() * dynamics.GetWheel(wi).GetRadius()
+	               : GetVelocity().Magnitude();
+	odometer += fabs(velocity)*dt;
+
 	UpdateSounds(dt);  // and damage
 	
 	///  graphs new values  .-_/\_.-
@@ -460,27 +468,3 @@ void CAR::SetPosRewind(const MATHVECTOR<float,3>& pos, const QUATERNION<float>& 
 }
 
 
-float CAR::CalcOdometer(float speedometer)
-{
-	using namespace boost::chrono;
-
-	// calc odometer
-	steady_clock::time_point now = steady_clock::now();
-
-	typedef boost::chrono::milliseconds ms;
-	ms d = boost::chrono::duration_cast<ms>( now - startOdometer);
-
-	if (pGame && !pGame->pause) // TODO
-	{
-		float milis = d.count();
-
-		if (odometer != -1.f)
-			odometer = odometer + (abs(speedometer) * (milis / 1000.f));
-		else
-			odometer = 0.f;
-	}
-
-	startOdometer = now;
-
-	return odometer;
-}

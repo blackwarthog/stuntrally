@@ -85,14 +85,12 @@ public:
 	bool GetTCSActive() const	{	return dynamics.GetTCSActive();		}
 	
 	// odometer
-	float odometer;
-	boost::chrono::steady_clock::time_point startOdometer;
+	double odometer;
 
-	float CalcOdometer(float speedometer);
-	long GetOdometer() const
-	{
-		return odometer;
-	}
+	double GetOdometer() const
+	{	return odometer; }
+	void SetOdometer(double value)
+	{	odometer = value; }
 
 	/// return the speedometer reading (based on the driveshaft speed) in m/s
 	float GetSpeedometer() const
